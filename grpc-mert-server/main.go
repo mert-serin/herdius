@@ -20,7 +20,6 @@ type server struct{}
 
 var preVal int32
 
-// SayHello implements helloworld.GreeterServer
 func (s *server) CheckMax(stream proto.HerdiusServer_CheckMaxServer) error {
 
 	for {

@@ -2,9 +2,7 @@ syntax = "proto3";
 
 package proto;
 
-// The greeting service definition.
 service HerdiusServer {
-    // Sends a greeting
     rpc CheckMax (stream MaxRequest) returns (stream MaxResponse) {}
 }
 
