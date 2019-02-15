@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package proto;
+
+// The greeting service definition.
+service HerdiusServer {
+    // Sends a greeting
+    rpc CheckMax (stream MaxRequest) returns (stream MaxResponse) {}
+}
+
+message MaxRequest {
+    int32 val = 1;
+}
+
+message MaxResponse {
+    int32 val = 1;
+}
